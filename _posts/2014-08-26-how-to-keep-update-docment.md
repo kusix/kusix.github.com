@@ -2,6 +2,7 @@
 layout: page
 title: 流水不腐，户枢不蠹
 tagline: 如何让事物保持更新
+tags : [团队管理, 道]
 ---
 {% include JB/setup %}
 

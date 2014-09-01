@@ -6,7 +6,7 @@
   <div class="span8">
     <h2 class="title"><a href="{{ latest_post.url }}" title="{{ latest_post.title }}">{{ latest_post.title }}</a> {% if latest_post.tagline %} <small>{{ latest_post.tagline }}</small>{% endif %}</h2>    
     <ul class="tag_box inline">
-	    <li>{{ latest_post.date | date("%Y-%m-%d") }}</li>
+	    <li>{{ latest_post.date | date_to_string }}</li>
 	    {% assign tags_list = latest_post.tags %}
 	    {% include JB/tags_list %}
     </ul>

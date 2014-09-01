@@ -2,19 +2,14 @@
 
 <div class="row post">
 
-<div class="span4 sidebar">
-    <h3 class="date">发布日期：<span>{{ latest_post.date | date_to_long_string }}</span></h3>
-  {% unless latest_post.tags == empty %}   
-    <ul class="tag_box inline">
-    <h3>标签</h3>
-    {% assign tags_list = latest_post.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
-  </div>
   
   <div class="span8">
-    <h1 class="title"><a href="{{ latest_post.url }}" title="{{ latest_post.title }}">{{ latest_post.title }}</a> {% if latest_post.tagline %} <small>{{ latest_post.tagline }}</small>{% endif %}</h1>
+    <h2 class="title"><a href="{{ latest_post.url }}" title="{{ latest_post.title }}">{{ latest_post.title }}</a> {% if latest_post.tagline %} <small>{{ latest_post.tagline }}</small>{% endif %}</h2>    
+    <ul class="tag_box inline">
+	    <span>{{ latest_post.date | date_to_long_string }}</span>
+	    {% assign tags_list = latest_post.tags %}
+	    {% include JB/tags_list %}
+    </ul>
     <br/>
     {{ latest_post.content }}
     

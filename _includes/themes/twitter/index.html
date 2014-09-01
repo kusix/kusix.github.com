@@ -1,9 +1,8 @@
-{% assign latest_post = site.posts.first %}
+{% for latest_post in site.posts %}
 
 <div class="row post">
   <div class="span8">
     <h1 class="title"><a href="{{ latest_post.url }}" title="{{ latest_post.title }}">{{ latest_post.title }}</a> {% if latest_post.tagline %} <small>{{ latest_post.tagline }}</small>{% endif %}</h1>
-    <br/>
     <br/>
     {{ latest_post.content }}
     <ul class="pager">
@@ -23,3 +22,4 @@
   {% endunless %}  
   </div>
 </div>
+{% endfor %}

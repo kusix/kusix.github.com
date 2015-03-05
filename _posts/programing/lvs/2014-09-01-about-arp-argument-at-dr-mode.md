@@ -2,11 +2,12 @@
 layout: page
 title: 关于DR模式下设置ARP参数的原理
 tags : [linux, LVS, 负载均衡, 术]
+comments: true
 
 ---
 {% include JB/setup %}
 
-###引子
+###概述
 在LVS的DR模式下，我们通常会在RS上设置两个ARP参数，下面我们详细解析设置它们的意义。
 
 ###关于arp_ignore&ensp;&emsp;&emsp;在RS上，lo绑定了VIP，物理网卡eth0绑定自身的RIP，对外公布的只有VIP。当客户端要向VIP发送数据时，会先发送ARP请求查询VIP的MAC地址，而由于RS上绑定了VIP，所以RS会对此做出ARP响应，而显然，整个集群里，只能有Director才可以对此ARP做出响应，所以就需要阻止RS对VIP的ARP请求做出响应。我们再来看arp_announce参数的定义：

@@ -53,8 +53,8 @@
       </div>
       
       {% include JB/comments %}
-      {% site.JB.comments.provider.short_name %}
-      {% page.comments %}
+      {{ site.JB.comments.provider }}
+      {{ page.comments }}
       
       <hr>
       <footer>

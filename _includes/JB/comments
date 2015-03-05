@@ -1,4 +1,4 @@
-{% if site.JB.comments.provider and page.comments != false %}
+{% if site.JB.comments.provider != false %}
 
 {% case site.JB.comments.provider %}
 {% when "disqus" %}
@@ -9,8 +9,8 @@
   {% include JB/comments-providers/intensedebate %}
 {% when "facebook" %}
   {% include JB/comments-providers/facebook %}
-{% when "custom" %}
-  {% include custom/comments %}
+{% when "duoshuo" %}
+  {% include custom/duoshuo %}
 {% endcase %}
 
 {% endif %}

@@ -51,6 +51,9 @@
       <div class="content">
         {{ content }}
       </div>
+      
+      {% include JB/comments %}
+      
       <hr>
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}

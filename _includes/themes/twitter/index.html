@@ -11,7 +11,7 @@
 	    {% include JB/tags_list %}
     </ul>
     <br/>
-    {{ latest_post.content }}
+    {{ latest_post.content || split:'<!--summary-->' | first}}
     
   </div>
 </div>

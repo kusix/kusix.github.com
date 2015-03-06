@@ -12,6 +12,9 @@
     </ul>
     <br/>
     {{ latest_post.content || split:'<!--summary-->' | first}}
+    <ul class="pager">
+      <li class="next"><a href="{{ latest_post.url }}" title="查看全文">查看全文 &rarr;</a></li>
+	</ul>
     
   </div>
 </div>

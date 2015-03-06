@@ -3,6 +3,7 @@ layout: page
 title: 游戏给你答案
 tagline: 从游戏中寻找积极的管理方法
 tags : [团队管理,游戏]
+comments: true
 
 ---
 {% include JB/setup %}

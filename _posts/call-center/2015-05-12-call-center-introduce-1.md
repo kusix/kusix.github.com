@@ -8,7 +8,7 @@ comments: true
 ---
 {% include JB/setup %}
 
-
+![hj-esp8266](https://github.com/kusix/kusix.github.com/raw/master/img/call-center-1.png)
 
 ####PSTN
 Public Switched Telephone Network，公共交换电话网络，即我们生活中的电话网，一种以模拟技术为基础的用于语音通信的电路交换网络。一条通路自建立直至释放，其全部带宽仅能被通路两端的设备使用，即使他们之间并没有任何数据需要传输。
@@ -53,4 +53,3 @@ Office Communications Server，企业即时通讯服务。Microsoft OCS则专指
 * 百度百科
 * [《基于SIP的分布式呼叫中心系统设计与实现》作者:安占新](http://www.doc88.com/p-0186174210911.html )   
  
-![hj-esp8266](https://github.com/kusix/kusix.github.com/raw/master/img/call-center-1.png)

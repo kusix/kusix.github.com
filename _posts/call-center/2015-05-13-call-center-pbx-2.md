@@ -17,7 +17,9 @@ Private Branch Exchange，电话交换机。在企业应用场景，公司不同
 
 ####IP-PBX时代
 可以简单理解为基于TCP/IP的PBX，可以同时接入IP网络和PSTN网络，功能非常强大。例如，可以通过互联网拨打电话（VoIP），IP电话拨不通能自动换用PSTN拨，收发电子传真、邮件，支持IVR、电话录音。支持网络路由、插块GSM扩展卡甚至能接入移动电话。
+
 <!--summary-->
+
 一般它的成本比传统PBX要低些，有两种形式，纯硬件用嵌入式系统的，和基于服务器使用开放操作系统的。
 
 ![img](https://github.com/kusix/kusix.github.com/raw/master/img/ip-pbx.png)

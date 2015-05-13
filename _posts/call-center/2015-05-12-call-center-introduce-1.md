@@ -27,6 +27,15 @@ Computer Telephony Integration，计算机电话集成。CTI技术是以电话�
 ####TDM
 Time-Division Multiplexing，时分复用，一种数字的或者模拟（较罕见）的多路复用技术。使用这种技术，两个以上的信号或数据流可以同时在一条通信线路上传输，其表现为同一通信信道的子信道。但在物理上来看，信号还是轮流占用物理信道的。时间域被分成周期循环的一些小段，每段时间长度是固定的，每个时段用来传输一个子信道。
 
+####E1
+一种电信传输标准，使用TDM技术传输数据，用于PSTN网络。
+
+####FXS
+Foreign Exchange Station，用于驳接PSTN线路，墙上的电话线插座就是FXS。
+
+####FXO
+Foreign Exchange Office，用于设备上接入电话线路，电话机上的电话插口就是FXO。
+
 ####VoIP
 Voice over Inertnet Protocol，即指在 IP 网络上使用 IP协议以数据包的方式传输语音。使用 VOIP协议，不管是因特网、企业内部互连网还是局域网都可以实现语音通信。一个使用 VOIP 的网络中，语音信号经过数字化，压缩并转换成 IP 包，然后在 IP 网络中进行传输。
 

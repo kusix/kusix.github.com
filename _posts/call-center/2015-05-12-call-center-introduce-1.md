@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 从0开始架构呼叫中心系统（一）
+title: 从0开始学习架构呼叫中心系统（一）
 tagline: 呼叫中心系统相关术语解释
 tags : [呼叫中心,电话客服]
 comments: true
@@ -11,10 +11,13 @@ comments: true
 ![hj-esp8266](https://github.com/kusix/kusix.github.com/raw/master/img/call-center-1.png)
 
 ####PSTN
-Public Switched Telephone Network，公共交换电话网络，即我们生活中的电话网，一种以模拟技术为基础的用于语音通信的电路交换网络。一条通路自建立直至释放，其全部带宽仅能被通路两端的设备使用，即使他们之间并没有任何数据需要传输。
+Public Switched Telephone Network，公共交换电话网络，即我们生活中的`电话网`，一种以模拟技术为基础的用于语音通信的电路交换网络。一条通路自建立直至释放，其全部带宽仅能被通路两端的设备使用，即使他们之间并没有任何数据需要传输。
 
 ####PBX
-Private Branch Exchange，程控交换机，完成企业内部之间以及与公共电信网络的电话交换，并将电话，传真，调制解调器等功能合并，处理分机之间的通话同时再通过主干线与公共交换电话网（PSTN）连接。
+Private Branch Exchange，电话交换机，完成企业内部之间以及与公共电信网络的电话交换，并将电话，传真等功能合并，处理分机之间的通话同时再通过主干线与公共交换电话网（PSTN）连接。
+
+####IP-PBX
+Private Branch Exchange，电话交换机，完成企业内部之间以及与公共电信网络的电话交换，并将电话，传真，调制解调器等功能合并，处理分机之间的通话同时再通过主干线与公共交换电话网（PSTN）连接。
 
 ####CTI
 Computer Telephony Integration，计算机电话集成。CTI技术是以电话语音为媒介，用户可以通过电话机上的按键来和呼叫中心的系统交互，基于CTI的呼叫中心使用TDM交换网络传输语音，其核心是基于传统电话交换机和自动呼叫分配系统。
@@ -29,7 +32,7 @@ Voice over Inertnet Protocol，即指在 IP 网络上使用 IP协议以数据包
 
 存在一些 VOIP协议栈，它们源于各种标准团体和提供商，如H.323、SIP、MEGACO和MGCP。
 
-###SIP
+####SIP
 Session Initiation Protocol，是建立 VOIP 连接的 IETF 标准。一种应用层控制协议，用于和一个或多个参与者创建、修改和终止会话。SIP 的结构与 HTTP （客户－服务器协议）相似。客户机发出请求，并发送给服务器，服务器处理这些请求后给客户机发送一个响应。该请求与响应形成一次事务。
 
 ####Trunk
@@ -48,8 +51,9 @@ Interactive Voice Response，互动式语音应答，在呼叫中心中用于语
 ####OCS
 Office Communications Server，企业即时通讯服务。Microsoft OCS则专指微软的企业级即时通讯解决方案，提供即时消息 (IM)、状态、Web 会议、音频/视频 (A/V) 会议及电话服务。2010年后被Lync取代。
 
-###参考
+####参考
 
 * 百度百科
 * [《基于SIP的分布式呼叫中心系统设计与实现》作者:安占新](http://www.doc88.com/p-0186174210911.html )   
  
+
